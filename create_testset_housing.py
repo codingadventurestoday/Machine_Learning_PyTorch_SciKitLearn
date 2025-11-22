@@ -1,7 +1,7 @@
 from zlib import crc32
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 
 
 from housing_data import housing_full
