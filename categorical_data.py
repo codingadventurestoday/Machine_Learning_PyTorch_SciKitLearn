@@ -15,3 +15,8 @@ housing_cat_encoded = ordinal_encoder.fit_transform(housing_cat)
 cat_encoder = OneHotEncoder()
 housing_cat_1hot = cat_encoder.fit_transform(housing_cat)
 
+"""
+#pandas method to convert categorical features into one- hot representation
+df_test = pd.DataFrame({'ocean_proximity': ['INLAND', 'NEAR BAY]})
+
+"""
