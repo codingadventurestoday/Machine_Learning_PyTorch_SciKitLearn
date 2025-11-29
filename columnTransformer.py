@@ -26,6 +26,6 @@ preprocessing = ColumnTransformer([
 
 housing_prepared = preprocessing.fit_transform(housing)
 
-df_housing_num_prepared = pd.DataFrame(
-    housing_prepared, columns=num_pipeline.get_feature_names_out(),
-    index=housing_prepared.index)
+df_housing_prepared = pd.DataFrame(
+    housing_prepared, columns=preprocessing.get_feature_names_out(),
+    index=housing.index)
